@@ -1,0 +1,213 @@
+/* VARIABLES */
+:root{
+    --main-color:#BBDDCF;
+    --secondary-color:#F5A661;
+    --nav-bg-color: rgba(187,221,207,.7);
+    --items-font-color: #313131;
+    --text-font-color:#E0E0E0;
+    --button-font-color: #000000;
+    --main-font: 'Rye', cursive;
+    --secondary-font:'Parisienne', cursive;
+    --nav-font-size: .9em;
+    --hero-title-size: 4.5em;
+    --subtitle-size: 3.5em;
+    --phrase-font-size: 2.5em;
+    --text-font-size: 1em;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    scroll-behavior: smooth;
+    font-weight: 400;
+}
+
+/* BARRA DE SCROLL */
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color: var(--nav-bg-color);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-color);
+}
+
+/* BARRA DE NAVEGACION */
+
+.nav-container{
+    display: grid;
+    height: 46px;
+    grid-template-columns: 20% 30% 50%;
+    padding: 5px 10px 5px 5%;
+    background: var(--main-color);
+    top: 0px;
+    position: sticky;
+    z-index: 300;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: var(--nav-font-size);
+}
+.nav-item{
+    text-decoration: none;
+    color: var(--items-font-color);
+}
+
+
+
+/* SECCION DEL HERO */
+
+.hero{
+    position: relative;
+    min-height: 110vh;
+    width: 100%;
+    background: url(img/heroBG.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.hero-left{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 200;
+}
+.hero-title{
+    font-size: var(--hero-title-size);
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+.hero-subtitle{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: var(--subtitle-size);
+    color: var(--text-font-color);
+    margin-bottom: 40px;
+}
+.button{
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+}
+#products-button{
+    color: var(--button-font-color);
+    background-color: var(--secondary-color);
+    border-radius: 3px;
+}
+#about-button{
+    color: var(--button-font-color);
+    background-color: var(--text-font-color);
+    border-radius: 3px;
+}
+
+.phrase-bg{
+    padding-right: 2%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+    bottom: 0;
+    right: 0;
+    width: 50%; 
+    height: 85%; 
+    background:var(--nav-bg-color);
+    -moz-border-radius:100%  0 0 0;
+    -webkit-border-radius: 100% 0 0 0;
+    border-radius: 100% 0 0 0;
+}
+.phrase{
+    margin: 60px 5% 0 0;
+    font-family: var(--secondary-font);
+    width: 60%;
+    font-size: var(--phrase-font-size);
+}
+
+
+
+/* SECCION CONOCENOS */
+
+.about{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 200vh;
+    width: 100%;
+    background-color: var(--items-font-color);
+}
+.about-item{
+    height: 100%;
+    width: 100%;
+}
+.about-circle{
+    position:absolute;
+    width: 50%;
+    height: 50%;
+    background:var(--nav-bg-color);
+    -moz-border-radius:0 0 100% 0;
+    -webkit-border-radius:0 0 100% 0;
+    border-radius: 0 0 100% 0;
+}
+.beans-img{
+    position: absolute;
+    height: 350px;
+    width: 350px;
+}
+.beans-img:first-child{
+    top: 40%;
+    left: 0;
+}
+.beans-img:nth-child(2){
+    left: 40%;
+}
+
+.about-us-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    position: absolute;
+    padding: 100px;
+    right: 0;
+    min-height: 400px;
+    max-width: 50%;
+}
+.about-us-title{
+    font-size: var(--phrase-font-size);
+    color: var(--secondary-color);
+}
+.about-us-text{
+    color: var(--text-font-color);
+    font-size: var(--text-font-size);
+    text-align: left;
+    font-weight: 200;
+}
+
+.about-history{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    position: absolute;
+    padding: 100px;
+    left: 0;
+    top: 100vh;
+    min-height: 400px;
+    max-width: 50%;
+}

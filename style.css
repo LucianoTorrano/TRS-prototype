@@ -9,8 +9,8 @@
     --main-font: 'Rye', cursive;
     --secondary-font:'Parisienne', cursive;
     --nav-font-size: .9em;
-    --hero-title-size: 4.5em;
-    --subtitle-size: 3.5em;
+    --hero-title-size: 5em;
+    --subtitle-size: 4em;
     --phrase-font-size: 2.5em;
     --text-font-size: 1em;
     --big-bg-font-size: 11em;
@@ -192,6 +192,7 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     gap: 5px;
     align-items: center;
+    z-index: 300;
 }
 .product-link img{
     height: 1.05em;
@@ -250,6 +251,7 @@ body::-webkit-scrollbar-thumb{
     font-size: var(--medium-bg-font-size);
     right: 10%;
     bottom: 0%;
+    z-index: 0;
 }
 .big-bg-text{
     width: 120%;
@@ -311,6 +313,7 @@ body::-webkit-scrollbar-thumb{
     position: absolute;
     bottom: -15%;
     left: 10%;
+    z-index: 0;
 }
 .title{
     font-size: var(--phrase-font-size);
@@ -349,6 +352,7 @@ body::-webkit-scrollbar-thumb{
 .slide img{
     width: 550px;
     height: 375px;
+    z-index: 100;
 }
 .navigation-manual{
     position: absolute;
@@ -363,6 +367,7 @@ body::-webkit-scrollbar-thumb{
     padding: 6px;
     cursor: pointer;
     border-radius: 10px;
+    z-index: 200;
 }
 
 .manual-btn:hover{
@@ -429,7 +434,7 @@ body::-webkit-scrollbar-thumb{
 
 /* MAPA */
 .map{
-    height: 400px;
+    height: 300px;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -473,15 +478,15 @@ body::-webkit-scrollbar-thumb{
 @media screen and (min-width:1600px){
     :root{
         --hero-title-size: 6em;
-        --subtitle-size: 4.5em;
-        --phrase-font-size: 3.5em;
+        --subtitle-size: 4em;
+        --phrase-font-size: 3em;
         --text-font-size: 1.2em;
         --big-bg-font-size: 15em;
         --medium-bg-font-size: 8em;
         --contact-font-size:1.4em;
     }
     .button{
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
     .slider, .slide img {
         width: 650px;
@@ -646,9 +651,6 @@ body::-webkit-scrollbar-thumb{
     .hero-container{
         width: 100%;
     }
-    .hero-left{
-        width: 100%;
-    }
     .about-us-container,.about-history,.photos-section{
         min-height: 30vh;
         max-width: 100%;
@@ -678,7 +680,8 @@ body::-webkit-scrollbar-thumb{
         margin: -15% 15% 0 0;
     }
     .hero-left{
-        top:10%;
+        width: 100%;
+        top:20%;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -757,6 +760,9 @@ body::-webkit-scrollbar-thumb{
     .beans-img:nth-child(2){
         top: 55%;
         left: 95%;
+    }
+    .beans-bg-top{
+        top: -60%;
     }
     .footer{
         font-size: .5em;

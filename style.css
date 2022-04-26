@@ -267,8 +267,14 @@ body::-webkit-scrollbar-thumb{
 
 }
 .beans-img{
-    height: 300px;
-    width: 300px;
+    height: 350px;
+}
+.wheat-img{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    height: 600px;
+    transform: rotate(-30deg);
 }
 .beans-img:first-child{
     position: absolute;
@@ -464,6 +470,36 @@ body::-webkit-scrollbar-thumb{
 
 
 /* MEDIA QUERIES */
+@media screen and (min-width:1600px){
+    :root{
+        --hero-title-size: 6em;
+        --subtitle-size: 4.5em;
+        --phrase-font-size: 3.5em;
+        --text-font-size: 1.2em;
+        --big-bg-font-size: 15em;
+        --medium-bg-font-size: 8em;
+        --contact-font-size:1.4em;
+    }
+    .button{
+        font-size: 1.4em;
+    }
+    .slider, .slide img {
+        width: 650px;
+        height: 450px;
+    }
+    .slides{
+        height: 450px;
+    }
+    .navigation-manual{
+        width: 650px;
+    }
+    .beans-bg{
+        height: 900px;
+    }
+    .beans-bg-top{
+        top: 20%;
+    }
+}
 
 @media screen and (max-width: 1180px){
     :root{
@@ -489,7 +525,9 @@ body::-webkit-scrollbar-thumb{
     }
     .beans-img{
         height: 250px;
-        width: 250px;
+    }
+    .wheat-img{
+        height: 400px;
     }
     .beans-bg{
         height: 650px;
@@ -525,13 +563,13 @@ body::-webkit-scrollbar-thumb{
 
 @media screen and (max-width: 960px){
     :root{
-        --hero-title-size: 3em;
-        --subtitle-size: 2.3em;
-        --phrase-font-size: 1.6em;
-        --text-font-size: .6em;
+        --hero-title-size: 3.5em;
+        --subtitle-size: 2.9em;
+        --phrase-font-size: 1.9em;
+        --text-font-size: .9em;
         --big-bg-font-size: 7em;
         --medium-bg-font-size: 4em;
-        --contact-font-size:.8em;
+        --contact-font-size:1em;
     }
     .about-us-container,.about-history,.photos-section,.circle-container{
         min-height: 70vh;
@@ -598,13 +636,12 @@ body::-webkit-scrollbar-thumb{
 
 @media screen and (max-width:768px){
     :root{
-        --hero-title-size: 2.5em;
-        --subtitle-size: 1.9em;
         --phrase-font-size: 1.6em;
         --text-font-size: .7em;
         --big-bg-font-size: 5em;
         --medium-bg-font-size: 4.5em;
         --contact-font-size:1em;
+        
     }
     .hero-container{
         width: 100%;
@@ -646,19 +683,25 @@ body::-webkit-scrollbar-thumb{
         transform: translateX(-50%);
     }
     .button{
-        font-size: .8em;
+        font-size: .9em;
     }
     .hero-subtitle{
         margin: 10px;
     }
     .beans-img:nth-child(2){
         left: 100%;
-        top: 25%;
+        top: 35%;
         transform: translateX(-100%);
+    }
+    .wheat-img{
+        height: 300px;
+        top: 40%;
+        left: 50%;
+        transform: rotate(0deg) translateX(-50%);
     }
     .beans-img:first-child{
         left: 0%;
-        top: 25%;
+        top: 35%;
     }
     .contact-container{
         width: 100%;
@@ -679,10 +722,46 @@ body::-webkit-scrollbar-thumb{
     }
 }
 
-@media screen and (max-width:450px){
-    .hero{
-        min-height: 80vh;
+@media screen and (max-width:550px){
+    :root{
+        --hero-title-size: 2.7em;
+        --subtitle-size: 2.1em;
+        --phrase-font-size: 1.5em;
     }
+    .hero{
+        min-height: 95vh;
+    }
+    .phrase-bg{
+        transform: translateY(50%);
+    }
+    .phrase{
+        margin: -45% 15% 0 0;
+    }
+    .hero-left{
+        top:20%
+    }
+    .circle-container{
+        transform: translateY(-50%);
+    }
+    .beans-img{
+        height: 150px;
+    }
+    .wheat-img{
+        height: 200px;
+        top: 60%;
+    }
+    .beans-img:first-child{
+        top: 55%;
+        left: 5%;
+    }
+    .beans-img:nth-child(2){
+        top: 55%;
+        left: 95%;
+    }
+    .footer{
+        font-size: .5em;
+    }
+
 }
 @keyframes navLinkFade{
 	from{

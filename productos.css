@@ -94,6 +94,7 @@
     font-family: var(--secondary-font);
     font-weight: 400;
     text-align: center;
+    padding-top: 10px;
 }
 .list-button{
     text-decoration: none;

@@ -29,7 +29,7 @@
 
 /* BARRA DE SCROLL */
 body::-webkit-scrollbar{
-    width: 7px;
+    width: 8px;
     background-color: var(--nav-bg-color);
 }
 body::-webkit-scrollbar-thumb{
@@ -428,6 +428,14 @@ body::-webkit-scrollbar-thumb{
 .info-detail{
     font-size: var(--contact-font-size);
     color: var(--secondary-color);
+    display: flex;
+}
+.contact-whatsapp-logo{
+    margin-top: 10px;
+    height: 25px;
+}
+.contact-google-maps-logo{
+    height: 25px;
 }
 .info-link{
     text-decoration: none;
@@ -775,6 +783,13 @@ body::-webkit-scrollbar-thumb{
         font-size: .5em;
     }
 
+}
+@media screen and (max-width:350px){
+    :root{
+        --hero-title-size: 2.3em;
+        --subtitle-size: 1.9em;
+        --phrase-font-size: 1.2em;
+    }
 }
 @keyframes navLinkFade{
 	from{

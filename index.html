@@ -55,26 +55,26 @@
         <h3 class="medium-bg-text">La mejor<br>Calidad</h3>
         <div class="circle-container">
             <div class="about-circle">
-                <img class="beans-img" alt="porotos" src="img/porotos.svg">
-                <img class="beans-img" alt="porotos" src="img/porotos.svg">
+                <img class="beans-img gsap-beans" alt="porotos" src="img/porotos.svg">
+                <img class="beans-img gsap-beans" alt="porotos" src="img/porotos.svg">
                 <img src="img/trigo.svg" alt="trigo" class="wheat-img">
             </div>
         </div>
         <div class="about-us-container">
             <img src="img/porotosBG.png" class="beans-bg beans-bg-top">
-            <h4 class="title">¿Quienes Somos?</h4>
-            <p class="about-us-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, pariatur ipsam! Assumenda exercitationem vero est illum explicabo unde ipsa, quas minus quis alias culpa consequatur quae? Animi fuga voluptate voluptas!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum aperiam. Maiores delectus neque deserunt. Error corrupti officia ipsam voluptates eaque rem ipsum. Accusamus, eius nulla voluptatem incidunt quidem officiis.
+            <h4 class="title gsap-about-us-top">¿Quienes Somos?</h4>
+            <p class="about-us-text gsap-about-us-top"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, pariatur ipsam! Assumenda exercitationem vero est illum explicabo unde ipsa, quas minus quis alias culpa consequatur quae? Animi fuga voluptate voluptas!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum aperiam. Maiores delectus neque deserunt. Error corrupti officia ipsam voluptates eaque rem ipsum. Accusamus, eius nulla voluptatem incidunt quidem officiis.
             <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, pariatur ipsam! Assumenda exercitationem vero est illum explicabo unde ipsa, quas minus quis alias culpa consequatur quae? Animi fuga voluptate voluptas!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum aperiam. Maiores delectus neque deserunt. Error corrupti officia ipsam voluptates eaque rem ipsum. Accusamus, eius nulla voluptatem incidunt quidem officiis.</p>
         </div>
         <div class="about-history">
             <img src="img/porotosBG.png" class="beans-bg beans-bg-bottom">
-            <h4 class="title">Nuestra Historia</h4>
-            <p class="about-us-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, pariatur ipsam! Assumenda exercitationem vero est illum explicabo unde ipsa, quas minus quis alias culpa consequatur quae? Animi fuga voluptate voluptas!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum aperiam. Maiores delectus neque deserunt. Error corrupti officia ipsam voluptates eaque rem ipsum. Accusamus, eius nulla voluptatem incidunt quidem officiis.
+            <h4 class="title gsap-about-us-history">Nuestra Historia</h4>
+            <p class="about-us-text gsap-about-us-history">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, pariatur ipsam! Assumenda exercitationem vero est illum explicabo unde ipsa, quas minus quis alias culpa consequatur quae? Animi fuga voluptate voluptas!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum aperiam. Maiores delectus neque deserunt. Error corrupti officia ipsam voluptates eaque rem ipsum. Accusamus, eius nulla voluptatem incidunt quidem officiis.
                 <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, pariatur ipsam! Assumenda exercitationem vero est illum explicabo unde ipsa, quas minus quis alias culpa consequatur quae? Animi fuga voluptate voluptas!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum aperiam. Maiores delectus neque deserunt. Error corrupti officia ipsam voluptates eaque rem ipsum. Accusamus, eius nulla voluptatem incidunt quidem officiis.</p>
-            <a href="products.html" class="button product-link" id="products-button2">Conocé nuestros Productos <img src="img/ir-a-enlace.svg"></a>
+            <a href="products.html" class="button product-link gsap-about-us-history" id="products-button2">Conocé nuestros Productos <img src="img/ir-a-enlace.svg"></a>
         </div>
         <div class="photos-section">
-            <div class="slider">
+            <div class="slider gsap-about-us-history">
                 <div class="slides">
                     <!-- Radio button start-->
                     <input type="radio" name="photo-btn" id="photo1">
@@ -123,9 +123,14 @@
         <p>© Todos los derechos reservados.</p>
         <p>Desarrollo Web realizado por Luciano Torrano </p>
     </footer>
-    <!-- Comentado porque me ponia nervioso
-        <script src="slider.js"></script>
-    -->
+    <!-- SLIDER -->
+    <script src="slider.js"></script>
+    <!-- RESPONSIVE BTN -->
     <script src="responsive-btn.js"></script>
+    <!-- GSAP CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- GSAP SCROLL TRIGGER-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="gsap-animation.js"></script>
 </body>
 </html>
